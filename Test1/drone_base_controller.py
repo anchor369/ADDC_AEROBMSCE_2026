@@ -1,4 +1,8 @@
 # drone_base_controller.py
+if sys.version_info >= (3, 10):
+    import collections.abc
+    import collections
+    collections.MutableMapping = collections.abc.MutableMapping
 import time
 import threading
 import logging
